@@ -1,0 +1,237 @@
+<!doctpe html >
+<html>
+<head>
+   <title>My Love !</title>
+   <link rel="icon"  type="image/*icon" href="./gentleman.png">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <style>
+   *{
+	margin:0;
+	padding:0;
+	font-family:'popins',sans-serif;
+	box-sizing:border-box;
+}
+
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	background:#081b29;
+}
+.wrap{
+	position:relative;
+	width:750px;
+	height:450px;
+	background:transparent;
+	border:2px solid #0ef;
+	box-shadow:0 0 35px #0ef;
+	overflow:hidden;
+}
+.wrap .form-box.login{
+	left:0;
+	padding:0 60px 0 40px ;
+}
+
+      	
+.form-box{
+	position:absolute;
+	top:0;
+	width:50%;
+	height:100%;
+	display:flex;
+	
+	flex-direction:column;
+	justify-content:center;
+}
+.form-box h2 {
+	font-size:32px;
+	color:#fff;
+	text-align:center;
+}
+.input-box {
+	position:relative;
+	width:100%;
+	height:50px;
+	
+	margin:25px 0;
+}
+ .input-box input{
+	width:100%;
+	height:100%;
+	font-size:16px;
+	color:#fff;
+	font-weight:500;
+	padding-right:20px;
+	background:transparent;
+	border:none;
+	outline:none;
+	border-bottom:2px solid #fff;
+	transition:.6s;
+}
+.input-box input:focus,
+.input-box input:valid{
+	border-bottom-color:#0ef;
+	
+}
+
+.input-box label {
+	position:absolute;
+	top:50%;
+	left:0;
+	transform:translatev(-50);
+	font-size:16px;
+	color:#fff;
+    pointer-events:none;
+	transition:.6s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+	top:-5px;
+	color:#0ef;
+	
+}
+
+.input-box i{
+	position:absolute;
+	top:50%;
+	right:0;
+	transform:translatev(-50%);
+	font-size:18px;
+	color:white;
+	transition:.6s;
+}
+
+.input-box input:focus~i,
+.input-box input:valid~i{
+	color:#0ef;
+	
+}
+
+.btn{
+	position:relative;
+	width:100%;
+	height:45px;
+	background:linear-gradient(to bottom, #0EF, #1A1A2E);
+	border:2px solid #0ef;
+	outline:none;
+	border-radius:40px;
+	 :none;
+	cursor:pointer;
+	font-size:16px;
+	color:#fff;
+	font-weight:600;
+	z-index:1;
+	
+}
+
+/*.btn::before{
+	content:"";
+	position:adsolute;
+	top:5;
+	left:0;
+	width:100%;
+	height:18%;
+	background:linear-gradient(#081b29,#0ef ,#081b29 ,#0ef);
+	z-index:-1;
+	
+}*/
+
+.log-link{
+	font-size:14.5px;
+	color:#fff;
+	text-align:center;
+	margin:20px 0 10px;
+}
+
+.log-link p a {
+	color:#0ef;
+	text-decoration:none;
+	font-weight:600;
+}
+
+.log-link p a:hover{
+	text-decoration:underline;
+}
+
+
+.wrap .info-text{
+	position:absolute;
+	top:0;
+	width:50%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align:right;
+	padding:0 40px 60px 150px;
+}
+
+.login{
+     right:0;
+}
+
+.info-text h2{
+   font-size:36px;
+   color:#fff;
+   line-height:1.3;
+   text-decoration:uppercase;
+}
+
+.info-text p{
+	font-size: 19px;
+	color:#fff;
+}
+
+.wrap .bg-animate{
+	position:absolute;
+	top: 0;
+	right: 0;
+	width:850px;
+	height:600px;
+	background:linear-gradient(45deg, #081b29, #0ef);
+	border-bottom:3px solid #0ef;
+	transform:rotate(10deg) skewy(40deg);
+	transform-origin:bottom right;
+}
+	
+	
+
+	
+
+
+   </style>
+</head>
+<body>
+  <div class="wrap">
+      <span class="bg-animate"></span>
+      <div class="form-box login">
+          <h2>Login</h2>
+          <form action="./login.html" target="_blank">
+
+             <div class="input-box">
+			     <input type="text" required>
+			     <label>Username</label>
+				<i class='bx bxs-user'></i>
+             </div>			 
+			  <div class="input-box">
+			     <input type="password" required>
+			     <label>password</label>
+				 <i class='bx bxs-lock'></i>
+             </div>
+			 <button type="submit" class="btn">login</button>
+			 <div class="log-link">
+			     <p>Don't have an account? <a href="./index.html" class="reg-link">sign up </a>
+			 </div>
+			 
+         </form>
+        </div>
+	      <div class="info-text login">
+		  <h2>Dear Priyatama</h2><br>
+		  <p>I miss you<br>more than I show,<br><br>I love you<br>more than you know </p>
+	      </div>
+  </div>
+
+</body>
+</html>
