@@ -1,0 +1,187 @@
+body{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100vh;
+	background:/*#b784db*/#800080;
+}
+.envelope{
+	position:relative;
+	cursor:pointer;
+	box-shadow:4px 4px 40px #B1D5FD;
+}
+
+.back{
+	position:relative;
+	width:250px;
+	height:200px;
+	background:#6247aa;
+}
+
+.front{
+	position:absolute;
+	border-right:130px solid #815ac0;
+	border-top:100px solid transparent;
+	border-bottom:100px solid transparent;
+	height: 0;
+	width: 0;
+	top: 0;
+	left:120px;
+	z-index: 3;
+}
+.front:before{
+	content:'';
+	position:absolute;
+	border-left:130px solid #815ac0;
+	border-top:100px solid transparent;
+	border-bottom:100px solid transparent;
+	height: 0;
+	width: 0;
+	top: -100px;
+	left: -120px;`
+}
+
+.front:after{
+	content:'';
+	position:absolute;
+	border-bottom:100px solid #7251b5;
+	border-left:125px solid transparent;
+	border-right:125px solid transparent;
+	height: 0; 
+	width: 0;
+	top: -1px;
+	left: -120px;
+}
+
+.top{
+	
+	position:absolute;
+	border-top:100px solid #9163cd;
+	border-left:125px solid transparent;
+	border-right:125px solid transparent;
+	height: 0; 
+	width: 0;
+	top: 0;
+	transform-origin: top;
+	transition:0.6s;
+}
+
+.envelope:hover .top{
+	transform: rotatex(160deg);
+}
+
+.letter{
+	position:absolute;
+	background:white;
+	width:240px;
+	height:180px;
+	top:10px;
+	left:10px;
+	transition:0.2s;
+}
+
+.envelope:hover .letter{
+	transform:translatey(-100px);
+    z-index:2;
+}
+
+
+
+
+.text1{
+	position:absolute;
+	color:white;
+	font-family:sans-serif;
+	top:-50%
+	
+}
+
+.text {
+	text-align:center;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:10px 0px 0px 10px;
+	font-weight:bold;
+	color:black;
+	position:relative;
+	top:-20px ;
+	left:20px;
+}
+/***************a****************/
+.log-link{
+	font-size:18px;
+	color:#fff;
+	text-align:center;
+	margin:500px 0 10px;
+	
+	position:relative;
+	right:260px;
+	
+}
+
+.log-link p a {
+	color:#0ef;
+	text-decoration:none;
+	font-weight:600;
+}
+
+.log-link p a:hover{
+	text-decoration:underline;
+}
+	
+	/*********heart**************/
+
+.heart{
+	background-color:red;
+	height:70px;
+	width:70px;
+	position:relative;
+	top:20px;
+	left:20px;
+	transform:rotate(-45deg);
+	box-shadow:-5px 15px 100px red;
+animation:untoldcoding 0.6s linear infinite;
+}
+@keyframes untoldcoding{
+	0%{
+		transform: rotate(-45deg) scale(1.07);
+	}
+	
+	70%{
+		transform: rotate(-45deg) scale(1.0);
+	}
+	
+	100%{
+		transform: rotate(-45deg) scale(0.08);
+	}
+}
+
+.heart:before{
+	content:'';
+	position:absolute;
+	height:70px;
+	width:70px;
+	background:red;
+	top:-40px;
+	border-radius:50px;
+}
+.heart:after{
+	content:'';
+	position:absolute;
+	height:70px;
+	width:70px;
+	background:red;
+	right:-40px;
+	border-radius:50px;
+}
+
+	
+	
+	
+	
+
+
+	
+	
+	
+	
